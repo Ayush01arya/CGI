@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>love calculator</title>
+
+    <style>
+        h3{
+            color: white;
+            text-align: center;
+            margin-bottom: 5px;
+            margin-top:0px;
+        }
+        
+
+        *{
+            box-sizing: border-box;
+        }
+       body{
+           background-color:#191919;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           min-height:100vh;
+           
+       }
+     button{
+    display: block;
+    text-align: center;
+    border:0;
+
+background:none;
+
+display:block;
+
+margin: 20px auto;
+
+text-align:center;
+
+border: 2px solid #2ecc71;
+
+padding: 14px 40px;
+
+outline:none;
+
+color:white;
+
+border-radius:24px;
+
+transition: 0.25s;
+
+cursor:pointer;
+    }
+
+    button:hover{
+        background:#2ecc71;
+    }
+    .container{
+       
+        background-color: #191919;
+        border-radius: 24px;
+        padding:50px;
+        margin: 50px;
+        width: 400px;
+        height: 370px;
+
+    }
+    .container:hover{
+        -webkit-box-shadow: 0px 11px 54px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 11px 54px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 11px 54px 0px rgba(0,0,0,0.75);
+    }
+     .header{
+        font-family: 'Montserrat', sans-serif;
+     }
+     
+     .in{
+         
+border:0;
+
+background:none;
+
+display:block;
+
+margin: 5px auto;
+
+text-align:center;
+margin-top: 10px;
+border: 2px solid #3498db;
+
+padding: 14px 10px;
+
+width: 200px;
+
+outline:none;
+
+color:white;
+
+border-radius:24px;
+
+transition: 0.25s;
+     }
+     .in:focus{
+        width:280px;
+
+border-color: #2ecc71;
+     }
+    </style>
+</head>
+<body>
+          <div class="container">
+              <div class="header">
+        <h3><b>HOW DEEP IS YOUR LOVE??</b></h3>
+    </div>
+        
+
+             <input id="name1"class="in"type="text" placeholder="enter your name here"><br>
+             <input id="name2"class="in"type="text" placeholder="enter your crash's name"><br>
+            <button id="button" onclick="lovecalc();">calculate</button>
+
+        </div>
+      
+
+   
+    <script>
+
+        alert("just a love calculator nothing big just don't try it with your wife")
+        
+        function lovecalc(){
+            let total1 = 0,total2 = 0;
+            let name1 = document.getElementById("name1").value;
+            let name2 = document.getElementById("name2").value;
+              
+            
+            
+            for (let i = 0; i < name1.length;i++){
+                total1 = name1.charCodeAt(i);
+
+            }
+            for(let j = 0; j< name2.length; j++){
+                total2 += name2.charCodeAt(j);
+
+            }
+            alert(Math.min(total1,total2)/Math.max(total1,total2)*100+"%")
+            
+
+        }
+
+        
+
+
+
+        
+        </script>
+</body>
+</html>
