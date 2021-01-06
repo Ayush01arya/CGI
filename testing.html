@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #txt{
+              width:737px;
+              heigth:50px;
+              font-size:25px;
+             }
+        #dd{
+            color:white;
+            background-color:black;
+            padding-top:10px;
+            height:75px;
+            }
+    </style>
+</head>
+<body>
+<div id="dd">
+    <h1>Product Registration</h1>
+</div>
+<form enctype="multipart/form-data" method="post" action="testing.py">
+    <input id="txt" type="text" name="pname" placeholder="Product Name "/>
+    <input id="txt" type="file" name="filename" placeholder="image"/>
+    <textarea cols="100" rows="20" name="des"></textarea>
+    <input id="txt" type="submit" name="sub" value="Register the product">
+</form>
+</body>
+</html>
